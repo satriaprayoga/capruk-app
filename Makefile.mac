@@ -2,14 +2,14 @@ BINARY_NAME=caprukApp
 
 build:
 	@go mod vendor
-	@echo "Building Celeritas..."
+	@echo "Building Capruk..."
 	@go build -o tmp/${BINARY_NAME} .
-	@echo "Celeritas built!"
+	@echo "Capruk built!"
 
 run: build
-	@echo "Starting Celeritas..."
+	@echo "Starting Capruk..."
 	@./tmp/${BINARY_NAME} &
-	@echo "Celeritas started!"
+	@echo "Capruk started!"
 
 clean:
 	@echo "Cleaning..."
@@ -25,8 +25,8 @@ test:
 start: run
 
 stop:
-	@echo "Stopping Celeritas..."
+	@echo "Stopping Capruk..."
 	@-pkill -SIGTERM -f "./tmp/${BINARY_NAME}"
-	@echo "Stopped Celeritas!"
+	@echo "Stopped Capruk!"
 
 restart: stop start
