@@ -1,0 +1,50 @@
+{
+    "app_name":"myapp",
+    "debug":true,
+    "server":{
+        "host":"localhost",
+        "http_port":9000,
+        "read_timeout":600,
+        "write_timeout":600
+    },
+    "database":{
+        "type": "postgres",
+        "host": "localhost",
+        "port": "5432",
+        "user": "example",
+        "password": "example",
+        "name": "capruk",
+        "table_prefix": ""
+    },
+    "redis":{
+        "host":"127.0.0.1",
+        "port":6379,
+        "db":0,
+        "key":"law_email",
+        "password":""
+    },
+    "smtp":{
+        "server":"smtp.gmail.com",
+        "port":587,
+        "sender":"lawyerinyou <gilsatpray@gmail.com>",
+        "user":"gilsatpray@gmail.com",
+        "passwd":"qbfaxttjojmuskcm",
+        "Identity":"Lawyer In You"
+    },
+    "jwt_secret": "sp00kyActionAtTheDist4ance",
+    "expire_jwt":72,
+    "page_size": 10,
+    "prefix_url": "http://127.0.0.1:8000",
+    "runtime_root_path": "wwwroot/runtime/",
+    "image_save_path": "wwwroot/uploads/images",
+    "image_size": 5,
+    "image_allow_ext": ".jpg,.jpeg,.png",
+    "export_save_path": "wwwroot/export/",
+    "qr_code": "wwwroot/qr_code/",
+    "log_save_path": "logs/",
+    "log_save_name": "log",
+    "log_file_ext": "log",
+    "time_format": 20060102,
+    "issuer": "myApp",
+    "url_forgot_password":"http://localhost:8084"
+}

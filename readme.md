@@ -1,0 +1,1 @@
+# Capruk Skeleton Application
